@@ -1,0 +1,208 @@
+<main class="flex-1 w-full h-full">
+    <div class="max-w-[650px] min-w-[200px] sm:w-300 text-white rounded-[15px] ml-1 mr-1 md:ml-auto md:mr-auto pt-5 pb-5 pl-3 pr-3 space-y-3 flex flex-col items-center mt-5 mb-5">
+        <div class="w-full">
+            <a href="/" class="" data-link>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </a>
+        </div>
+
+        <h1 class="border-b-1 border-white pb-2 pl-2 pr-2 text-center font-bold text-[1.2rem]">
+            Fazer pedido
+        </h1>
+
+        <div class="swiper w-full h-[100px]">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    
+
+        <form id="form" class="pl-3 pr-3 w-full">
+            <div class="flex flex-col space-y-3">
+                <div class="flex flex-col border-b-1 border-zinc-100/20 pb-4 gap-4">
+                    <span class="flex flex-col">
+                        <label for="name">Digite seu nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome aqui" class="bg-zinc-100 rounded-[6px] pt-1 pb-1 pl-2 text-black">
+                    </span>
+
+                    <span class="flex flex-col">
+                        <label for="cellphone">Confirme seu número de celular: <span class="text-zinc-100/70">(Confirmação do pedido vai chegar por ele)</span></label>
+                        <input type="text" name="cellphone" id="cellphone" placeholder="Digite o seu número" class="bg-zinc-100 rounded-[6px] pt-1 pb-1 pl-2 text-black">
+                    </span>
+                </div>
+    
+                <div class="flex flex-col">
+                    <span class="flex flex-col">
+                        <label for="massa1">Massa 1:</label>
+                        <select name="" class="name-massa1 w-30 bg-zinc-100 text-black pt-1 pb-1 pl-1 pr-3 rounded-[10px]">
+                            <option value="">Selecione...</option>
+                        </select>
+                    </span>
+                </div>
+    
+                <div class="flex flex-col border-b-1 border-zinc-100/20 pb-4">
+                    <span class="flex flex-col gap-1">
+                        <label for="recheio1">Recheio 1:</label>
+                        <select name="" class="name-recheio1 w-30 bg-zinc-100 text-black pt-1 pb-1 pl-1 pr-3 rounded-[10px]">
+                            <option value="">Selecione...</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="flex flex-col">
+                        <label for="massa2">Massa 2:</label>
+                        <select name="" class="name-massa2 w-30 bg-zinc-100 text-black pt-1 pb-1 pl-1 pr-3 rounded-[10px]">
+                            <option value="">Selecione...</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="flex flex-col gap-1">
+                        <label for="recheio2">Recheio 2:</label>
+                        <select name="" class="name-recheio2 w-30 bg-zinc-100 text-black pt-1 pb-1 pl-1 pr-3 rounded-[10px]">
+                            <option value="">Selecione...</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="border-t-1 border-zinc-100/20 pt-4">
+                    <span class="flex flex-col gap-1">
+                        <label for="recheio2">Complemento para sua fatia:</label>
+                        <select name="" class="name-recheio2 w-30 bg-zinc-100 text-black pt-1 pb-1 pl-1 pr-3 rounded-[10px]">
+                            <option value="">Selecione...</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="border-t-1 border-zinc-100/20 pt-4 space-y-3">
+                   
+
+                    <!-- <div class="not-prose overflow-auto rounded-lg bg-zinc-900 outline outline-white/5">
+                        <div class="my-5 overflow-hidden">
+                            <table class="w-full table-auto border-collapse text-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="border-b border-gray-200 p-4 pt-0 pb-3 pl-8 text-left font-medium text-gray-400 dark:border-gray-600 dark:text-gray-200">
+                                            Massa
+                                        </th>
+                                        <th class="border-b border-gray-200 p-4 pt-0 pb-3 pl-8 text-left font-medium text-gray-400 dark:border-gray-600 dark:text-gray-200">
+                                            Recheio
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="details-order" class="bg-white">
+                                    <tr>
+                                        <td id="select-massa1" class="border-b border-gray-400 p-4 pl-8 text-black">
+                                            Teste1
+                                        </td>
+                                        <td id="select-massa1" class="border-b border-gray-400 p-4 pl-8 text-black">
+                                            Teste1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-b border-gray-400 p-4 pl-8 text-black">
+                                            Teste2
+                                        </td>
+                                        <td class="border-b border-gray-400 p-4 pl-8 text-black">
+                                            Teste2
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div> -->
+                    <section class="w-full max-w-xl bg-white rounded-lg shadow">
+                        <p class="text-black p-2 w-full flex justify-center">Detalhes do pedido</p>
+                        <hr class="border-gray-300">
+                        <!-- LINHA 1 -->
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="font-semibold text-gray-700">
+                                Massa 1
+                            </span>
+                            <span class="text-gray-700">
+                                massa1
+                            </span>
+                        </div>
+
+                        <hr class="border-gray-300">
+
+                        <!-- LINHA 2 -->
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="font-semibold text-gray-700">
+                                Recheio 1
+                            </span>
+                            <span class="text-gray-700">
+                                recheio1
+                            </span>
+                        </div>
+
+                        <hr class="border-gray-300">
+
+                        <!-- LINHA 3 -->
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="font-semibold text-gray-700">
+                                Massa 2
+                            </span>
+                            <span class="text-gray-700">
+                                massa2
+                            </span>
+                        </div>
+
+                        <hr class="border-gray-300">
+
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="font-semibold text-gray-700">
+                                Recheio 2
+                            </span>
+                            <span class="text-gray-700">
+                                recheio2
+                            </span>
+                        </div>
+
+                        <hr class="border-gray-300">
+
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="font-semibold text-gray-700">
+                                Complemento
+                            </span>
+                            <span class="text-gray-700">
+                                complemento
+                            </span>
+                        </div>
+
+                        <hr class="border-gray-300">
+
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <span class="text-gray-700">
+                                Preço
+                            </span>
+                            <span class="text-gray-700">
+                                0,00
+                            </span>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-2 pt-3 mt-3 border-t-2 border-zinc-100">
+                <button type="submit" class="button font-bold pt-3 pb-3 text-black hover:bg-zinc-800 ease-in-out rounded-[10px] cursor-pointer transition duration-[0.3s]">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
